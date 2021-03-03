@@ -1,24 +1,50 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## usersテーブル
 
-Things you may want to cover:
+| Column           | Type   | Options                   |
+| -----------------|--------|---------------------------|
+| nickname         | string | null: false               |
+| email            | string | null: false, unique: true |
+| password         | string | null: false               |
+| department       | string | null: false               |
+| position         | string | null: false               |
+| family_name      | string | null: false               |
+| first_name       | string | null: false               |
+| family_name_kana | string | null: false               |
+| first_name_kana  | string | null: false               |
 
-* Ruby version
+### Association
 
-* System dependencies
+- has_many :memos
+- has_many :comments
 
-* Configuration
+## memosテーブル
 
-* Database creation
+| Column           | Type       | Options           |
+| -----------------|------------|-------------------|
+| hospital_name    | string     | null: false       |
+| hospital_teacher | string     | null: false       |
+| record           | string     | null: false       |
+| way_id           | integer    | null: false       |
+| pace_id          | integer    | null: false       |
+| remote_id        | integer    | null: false       |
+| user             | references | foreign_key: true |
 
-* Database initialization
+### Association
 
-* How to run the test suite
+- belongs_to :user
+- has_many :comments
 
-* Services (job queues, cache servers, search engines, etc.)
+## comments table
 
-* Deployment instructions
+| Column | Type       | Options           |
+|--------|------------|-------------------|
+| text   | text       | null: false       |
+| memo   | references | foreign_key: true |
+| user   | references | foreign_key: true |
 
-* ...
+### Association
+
+- belongs_to :memo
+- belongs_to :user
