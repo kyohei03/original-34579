@@ -37,7 +37,7 @@ a {
 /* ヘッダー */
 
 .header {
-  background-color: orangered;
+  background-color: tomato;
   margin-bottom: 20px;
   padding: 10px 0;
 
@@ -272,10 +272,10 @@ a {
 
 .footer {
   background-color: mediumaquamarine;
-  padding: 10px 0;
+  padding: 4.8px 0;
 }
 .copyright {
   text-align: center;
-  color: #fff;
-  font-size: 30px;
+  color: floralwhite;
+  font-size: 25px;
 }
