@@ -1,3 +1,2 @@
-class ApplicationRecord < ActiveRecord::Base
-  self.abstract_class = true
+class ApplicationController < ActionController::Base
 end
