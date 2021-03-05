@@ -29,7 +29,7 @@
           <% if user_signed_in? %>
             <div class="nav__right">
               <p><%= link_to "ログアウト", destroy_user_session_path, class: :nav__btn %><br>
-              <%= link_to "新規メモ👨‍💻", root_path, class: :nav__btn %>
+              <%= link_to "新しいメモ", root_path, class: :nav__btn %>
             </div>
           <% else %>
             <div class="nav__right">
@@ -43,7 +43,7 @@
     </header>
     <%= yield %>
     <footer class="footer">
-      <p class="copyright">⚠ これは、Dr情報💊メモ👨‍💻（仕事用）です。🚫個人情報流出🚫に何卒、ご注意くださいませ！！⚠ </p>
+      <p class="copyright">⚠ これは、Dr情報💊共有ノート👨‍💻（仕事用）です。🚫個人情報流出🚫に何卒、ご注意くださいませ！！⚠ </p>
     </footer>
   </body>
 </html>
