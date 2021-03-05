@@ -1,9 +1,12 @@
 <main class="main">
   <div class="inner">
-    <%# ログインしているときは以下を表示する %>
-      <%# <div class="greeting"> %>
-        <%# こんにちは、 %>
-        <%# <%= link_to "ユーザー名さん", root_path, class: :greeting__link%>
+     <% if user_signed_in? %>
+      <div class="greeting">
+        <%= link_to "#{current_user.nickname}さん", root_path, class: :greeting__link %>
+        <p>早速、Dr.💊情報を書いていこう✍✨<br>
+        </p>
+      </div>
+     <% end %>
       <%# </div> %>
     <%# // ログインしているときは上記を表示する %>
     <div class="card__wrapper">

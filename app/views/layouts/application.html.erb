@@ -24,17 +24,20 @@
             </p>
             <p>✨💪.｡..:*(´∀｀*💰)*:.｡..✨<br>
             最高の待遇がが待っている❗<br>
-            さっさとノートを書けぇー❗<br>
+            さっさとメモ💊を書けぇー❗<br>
             </p>
-          <%# ログインしているときは以下を表示するようにしましょう %>
-          <%# // ログインしているときは上記を表示するようにしましょう %>
-          <%# ログインしていないときは以下を表示するようにしましょう %>
+          <% if user_signed_in? %>
             <div class="nav__right">
-              <p><%= link_to "ログイン", root_path, class: :nav__btn %><br>
+              <p><%= link_to "ログアウト", destroy_user_session_path, class: :nav__btn %><br>
+              <%= link_to "新規メモ👨‍💻", root_path, class: :nav__btn %>
+            </div>
+          <% else %>
+            <div class="nav__right">
+              <p><%= link_to "ログイン", new_user_session_path, class: :nav__btn %><br>
               <%= link_to "新規登録", new_user_registration_path, class: :nav__btn %>
               </p>
             </div>
-          <%# // ログインしていないときは上記を表示するようにしましょう %>
+          <% end %>
         </div>
       </div>
     </header>
