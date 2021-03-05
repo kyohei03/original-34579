@@ -88,6 +88,7 @@ a {
 
 /* フォーム周り */
 .form__wrapper{
+  padding-top: 100px;
   min-height: calc(100vh - 161px);
 }
 
