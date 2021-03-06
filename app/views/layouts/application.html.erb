@@ -29,7 +29,7 @@
           <% if user_signed_in? %>
             <div class="nav__right">
               <p><%= link_to "ログアウト", destroy_user_session_path, class: :nav__btn %><br>
-              <%= link_to "新しいメモ", root_path, class: :nav__btn %>
+              <%= link_to "新しいメモ", new_memo_path, class: :nav__btn %>
             </div>
           <% else %>
             <div class="nav__right">
