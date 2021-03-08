@@ -1,9 +1,9 @@
 class Memo < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :user
-  belongs_to :way_id
-  belongs_to :pace_id
-  belongs_to :remote_id
+  belongs_to :way
+  belongs_to :pace
+  belongs_to :remote
 
   with_options presence: true do
     validates :hospital_name
