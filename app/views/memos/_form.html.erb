@@ -1,17 +1,33 @@
 <%= form_with(model: @memo, local: true) do |f|%>
   <div class="field">
-    <%= f.label :title, "プロトタイプの名称" %><br />
-    <%= f.text_field :title %>
+    <%= f.label :title, "担当先の病院の名前" %><br />
+    <%= f.text_field :hospital_name %>
   </div>
 
   <div class="field">
-    <%= f.label :catch_copy, "キャッチコピー" %><br />
-    <%= f.text_area :catch_copy, class: :form__text %>
+  <%= f.label :title, "担当先の病院の先生" %><br />
+  <%= f.text_field :hospital_teacher %>
   </div>
 
   <div class="field">
-    <%= f.label :concept, "コンセプト" %><br />
-    <%= f.text_area :concept, class: :form__text %>
+    <%= f.label :title, "活動方法" %><br />
+    <%= f.collection_select(:way_id, Way.all, :id, :name, {}, {class:"select-box", id:"memo-way"}) %>
+  </div>
+
+  <div class="field">
+  <%= f.label :title, "活動頻度" %><br />
+  <%= f.collection_select(:pace_id, Pace.all, :id, :name, {}, {class:"select-box", id:"memo-pace"}) %>
+  </div>
+
+  <div class="field">
+  <%= f.label :title, "リモート面談の可否" %><br />
+  <%= f.collection_select(:remote_id, Remote.all, :id, :name, {}, {class:"select-box", id:"memo-remote"}) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :title, "活動記録" %><br />
+    <%= f.text_area :record, placeholder:"例) 3月1日（月）
+医局室で面談を実施...etc" , class: :form__text %><br />
   </div>
 
   <div class="actions">

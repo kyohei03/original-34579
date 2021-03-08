@@ -1,4 +1,4 @@
-class Remote < ApplicationRecord
+class Remote < ActiveHash::Base
   self.data = [
     { id: 1, name: '--' },
     { id: 2, name: '可能(zoom)' },
