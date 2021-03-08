@@ -147,7 +147,6 @@ a {
 .card__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   padding-top: 30px;
 }
@@ -164,6 +163,11 @@ a {
   font-size: 15px;
   margin-bottom: 3px;
 }
+
+.card__title:hover {
+  color: dodgerblue;
+  }
+
 .card__summary {
   color: #3b4043;
   font-size: 15px;
@@ -175,8 +179,11 @@ a {
   border-bottom: double 5px #FFC778;
   font-size: 15px;
   color: #3b4043;
-  text-align: right;
 }
+
+.card__user:hover {
+  color: dodgerblue;
+  }
 
 /* 詳細ページ */
 .prototype__wrapper{
