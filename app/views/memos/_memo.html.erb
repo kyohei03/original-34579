@@ -1,0 +1,7 @@
+<div class="card__body">
+    <%= link_to memo.hospital_name, memo_path(memo.id), class: :card__title %>
+    <p class="card__summary">
+      <%= memo.hospital_teacher %>
+    </p>
+     <%= link_to "by 投稿者名", root_path, class: :card__user %>
+</div>

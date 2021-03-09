@@ -15,21 +15,21 @@
       <div class="inner">
         <div class="nav">
           <div class="nav__left">
-            <%= image_tag("logo1.png", class: :logo) %>
-            <%= image_tag("logo3.png", class: :logo) %>
+            <%= link_to image_tag("logo1.png", class: :logo), root_path %>
+            <%= link_to image_tag("logo3.png", class: :logo), root_path %>
           </div>
-            <p>🔥心を燃やせ🔥<br>
-            社畜どもよ！さあ病院に❗<br>
-            この先には・・・<br>
+            <p>🚫メモの記載について🚫<br>
+            ・面談内容を明確に記載<br>
+            ・簡潔に文書化する事<br>
             </p>
-            <p>✨💪.｡..:*(´∀｀*💰)*:.｡..✨<br>
-            最高の待遇がが待っている❗<br>
-            さっさとメモ💊を書けぇー❗<br>
+            <p>🚫次回の確認日🚫<br>
+            ・2021年3月31日(水)<br>
+            ・午前中の会議前まで<br>
             </p>
           <% if user_signed_in? %>
             <div class="nav__right">
               <p><%= link_to "ログアウト", destroy_user_session_path, class: :nav__btn %><br>
-              <%= link_to "新しいメモ", root_path, class: :nav__btn %>
+              <%= link_to "新しいメモ", new_memo_path, class: :nav__btn %>
             </div>
           <% else %>
             <div class="nav__right">
@@ -43,7 +43,7 @@
     </header>
     <%= yield %>
     <footer class="footer">
-      <p class="copyright">⚠ これは、Dr情報💊共有ノート👨‍💻（仕事用）です。🚫個人情報流出🚫に何卒、ご注意くださいませ！！⚠ </p>
+      <p class="copyright">⚠ これは、Dr情報💊共有ノート（仕事用）です。🚫個人情報流出🚫に何卒、ご注意くださいませ！！⚠ </p>
     </footer>
   </body>
 </html>

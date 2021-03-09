@@ -19,7 +19,7 @@
         </div>
 
         <div class="field">
-          <%= f.label :password, "パスワード再入力" %><br />
+          <%= f.label :password, "パスワード確認" %><br />
           <%= f.password_field :password, autocomplete: "new-password" %>
         </div>
 
@@ -28,7 +28,7 @@
             <label class="form-text">本名（フルネーム）</label>
           </div>
           <div class='input-name-wrap'>
-            <%= f.text_field :family_name, placeholder:"例) 松田"  %>
+            <%= f.text_field :family_name, placeholder:"例) 松田" %>
             <%= f.text_field :first_name, placeholder:"例) 幸大" %>
           </div>
         </div>

@@ -1,0 +1,36 @@
+<%= form_with(model: @memo, local: true) do |f|%>
+  <div class="field">
+    <%= f.label :hospital_name, "担当先の病院の名前" %><br />
+    <%= f.text_field :hospital_name %>
+  </div>
+
+  <div class="field">
+  <%= f.label :hospital_teacher, "担当先の病院の先生" %><br />
+  <%= f.text_field :hospital_teacher %>
+  </div>
+
+  <div class="field">
+    <%= f.label :way_id, "活動方法" %><br />
+    <%= f.collection_select(:way_id, Way.all, :id, :name, {}, {class:"select-box", id:"memo-way"}) %>
+  </div>
+
+  <div class="field">
+  <%= f.label :pace_id, "活動頻度" %><br />
+  <%= f.collection_select(:pace_id, Pace.all, :id, :name, {}, {class:"select-box", id:"memo-pace"}) %>
+  </div>
+
+  <div class="field">
+  <%= f.label :remote_id, "リモート面談の可否" %><br />
+  <%= f.collection_select(:remote_id, Remote.all, :id, :name, {}, {class:"select-box", id:"memo-remote"}) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :record, "活動記録" %><br />
+    <%= f.text_area :record, placeholder:"例) 3月1日（月）
+医局室で面談を実施...etc" , class: :form__text %><br />
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+<% end %>
