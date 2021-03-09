@@ -25,7 +25,7 @@
 | -----------------|------------|-------------------|
 | hospital_name    | string     | null: false       |
 | hospital_teacher | string     | null: false       |
-| record           | string     | null: false       |
+| record           | text       | null: false       |
 | way_id           | integer    | null: false       |
 | pace_id          | integer    | null: false       |
 | remote_id        | integer    | null: false       |
