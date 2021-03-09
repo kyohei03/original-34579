@@ -127,7 +127,7 @@ a {
 /* メイン */
 
 .greeting{
-  padding-top: 120px;
+  padding-top: 100px;
   width: 100%;
 }
 .greeting__link{
@@ -150,7 +150,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 95px;
 }
 .card {
   width: calc((100% - 50px) / 3);
@@ -227,7 +227,7 @@ a {
 .prototype__btn{
   display: block;
   padding: 0.4em 1.6em;
-  font-size: 0.4em;
+  font-size: 1em;
   color: #999;
   text-decoration: none;
   user-select: none;
@@ -267,27 +267,50 @@ a {
   min-height: calc(100vh - 161px);
   padding-top: 120px;
 }
-.table{
-  border-collapse: collapse;
-  margin-bottom: 32px;
-  width: 48%;
+
+.table_top{
+display: flex;
+justify-content: space-around;
 }
+
 .table__col1{
   text-align: left;
   font-weight: bold;
   background: #fafafa;
   border-collapse: collapse;
   border: 1px solid #e7dcdc;
-  width: 35%;
+  width: 6cm;
   padding: 8px;
 }
 .table__col2{
   text-align: left;
   border: 1px solid #e7dcdc;
   border-collapse: collapse;
-  width: 65%;
+  width: 6cm;
   padding: 16px 8px;
 }
+
+.table__col3{
+  text-align: center;
+  font-weight: bold;
+  background: #fafafa;
+  border-collapse: collapse;
+  border: 1px solid #e7dcdc;
+  width: 12cm;
+  padding: 8px;
+}
+.table__col4{
+  vertical-align: top;
+  border: 1px solid #e7dcdc;
+  border-collapse: collapse;
+  overflow: auto;
+  width: 12cm;
+  height: 6.73cm;
+  padding: 16px 8px;
+}
+
+
+
 .user__card {
   display: flex;
   flex-wrap: wrap;

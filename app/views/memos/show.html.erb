@@ -1,7 +1,9 @@
 <main class="main">
   <div class="inner">
     <div class="user__wrapper">
-      <table class="table">
+    <div class= "table_top">
+    <div>
+      <table class="table1">
         <tbody>
           <tr>
             <th class="table__col1">担当先の病院の名前</th>
@@ -23,7 +25,17 @@
             <th class="table__col1">リモート面談の可否</th>
             <td class="table__col2"><%=@memo.remote.name %></td>
           </tr>
+        <tbody>
       </table>
+      </div>
+      <div>
+        <table class="table2">
+          <tr><th><th class="table__col3">活動記録</th></tr>
+          <tr><td><td class="table__col4"><%=@memo.record %></td></tr>
+          <tbody>
+        </table>
+      </div>
+    </div>
       <% if current_user == @memo.user %>
         <div class="prototype__manage">
           <%= link_to "編集する", root_path, class: :prototype__btn %>
