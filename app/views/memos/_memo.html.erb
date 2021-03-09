@@ -1,5 +1,5 @@
 <div class="card__body">
-    <%= link_to memo.hospital_name, root_path, class: :card__title %>
+    <%= link_to memo.hospital_name, memo_path(memo.id), class: :card__title %>
     <p class="card__summary">
       <%= memo.hospital_teacher %>
     </p>

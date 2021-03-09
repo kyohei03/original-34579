@@ -2,5 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "memos#index"
   resources :memos do
-    end
+    resources :comments, only: :create
+  end
+  resources :users, only: :show
 end

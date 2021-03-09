@@ -18,6 +18,7 @@ div {
 body {
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
   color: #3b4043;
+  font-family: 'Exo', sans-serif;
 }
 
 li {
@@ -40,7 +41,7 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: tomato;
+  background-color: skyblue;
   margin-bottom: 20px;
   padding: 10px 0;
 
@@ -126,7 +127,7 @@ a {
 /* メイン */
 
 .greeting{
-  padding-top: 100px;
+  padding-top: 120px;
   width: 100%;
 }
 .greeting__link{
@@ -139,16 +140,17 @@ a {
 
 .card__body {
   color: #364e96;/*文字色*/
-  border: solid 3px #364e96;/*線色*/
+  border: solid 3px skyblue;/*線色*/
   padding: 0.7em;/*文字周りの余白*/
   border-radius: 0.5em;/*角丸*/
+  margin: 10px;
 }
 
 .card__wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 .card {
   width: calc((100% - 50px) / 3);
@@ -159,7 +161,7 @@ a {
 }
 .card__title {
   display: block;
-  border-bottom: double 5px #FFC778;
+  border-bottom: double 3px #3b4043;
   font-size: 15px;
   margin-bottom: 3px;
 }
@@ -171,12 +173,12 @@ a {
 .card__summary {
   color: #3b4043;
   font-size: 15px;
-  border-bottom: double 5px #FFC778;
+  border-bottom: double 3px #3b4043;
   margin-bottom: 3px;
 }
 .card__user {
   display: block;
-  border-bottom: double 5px #FFC778;
+  border-bottom: double 3px #3b4043;
   font-size: 15px;
   color: #3b4043;
 }
@@ -190,6 +192,7 @@ a {
   min-height: calc(100vh - 161px);
 }
 .prototype__hedding{
+  padding-top: 120px;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
@@ -262,26 +265,27 @@ a {
 /* ユーザーページ */
 .user__wrapper{
   min-height: calc(100vh - 161px);
+  padding-top: 120px;
 }
 .table{
   border-collapse: collapse;
   margin-bottom: 32px;
-  width: 50%;
+  width: 48%;
 }
 .table__col1{
   text-align: left;
   font-weight: bold;
   background: #fafafa;
   border-collapse: collapse;
-  border: 1px solid #f5f5f5;
-  width: 30%;
+  border: 1px solid #e7dcdc;
+  width: 35%;
   padding: 8px;
 }
 .table__col2{
   text-align: left;
-  border: 1px solid #f5f5f5;
+  border: 1px solid #e7dcdc;
   border-collapse: collapse;
-  width: 70%;
+  width: 65%;
   padding: 16px 8px;
 }
 .user__card {
@@ -293,7 +297,7 @@ a {
 /* フッター */
 
 .footer {
-  background-color: mediumaquamarine;
+  background-color: skyblue;
   padding: 4.9px 0;
   position: fixed;
   bottom: 0;
@@ -301,6 +305,5 @@ a {
 }
 .copyright {
   text-align: center;
-  color: floralwhite;
-  font-size: 22px;
+  font-size: 20px;
 }
