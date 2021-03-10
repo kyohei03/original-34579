@@ -10,7 +10,6 @@ class MemosController < ApplicationController
   end
 
   def create
-    # binding.pry
     @memo = Memo.new(memo_params)
     if @memo.save
       redirect_to memos_path
@@ -21,6 +20,8 @@ class MemosController < ApplicationController
 
   def show
     @memo = Memo.find(params[:id])
+    @comment = Comment.new
+    @comments = @memo.comments
   end
 
   def edit

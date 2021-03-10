@@ -4,6 +4,7 @@ class Memo < ApplicationRecord
   belongs_to :way
   belongs_to :pace
   belongs_to :remote
+  has_many :comments, dependent: :destroy
 
   with_options presence: true do
     validates :hospital_name
