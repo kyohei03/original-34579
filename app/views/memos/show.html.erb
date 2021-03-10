@@ -46,9 +46,9 @@
 
       <div class="prototype__comments">
         <% if user_signed_in? %>
-          <%= form_with(model: [@memo], local: true) do |f| %>
+          <%= form_with(model: [@memo, @comment], local: true) do |f| %>
             <div class="field">
-              <%= f.label :comment, "コメント" %><br/>
+              <%= f.label :comment, "応援コメント！" %><br/>
               <%= f.text_field :text %>
             </div>
             <div class="actions">
@@ -57,8 +57,12 @@
           <% end %> 
         <% end %>
         <ul class="comments_lists">
+          <% @comments.each do |comment| %>
           <li class="comments_list">
-          <%# // 投稿に紐づくコメントを一覧する処理を記述する %>
+           <%= comment.text %>
+          <%= link_to comment.user.nickname, user_path(comment.user), class: :comment_user %>
+          </li>
+        <% end %>
         </ul>
       </div>
     </div>
