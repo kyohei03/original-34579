@@ -48,7 +48,7 @@
         <% if user_signed_in? %>
           <%= form_with(model: [@memo], local: true) do |f| %>
             <div class="field">
-              <%= f.label :comment, "コメント" %><br/>
+              <%= f.label :comment, "応援コメント！" %><br/>
               <%= f.text_field :text %>
             </div>
             <div class="actions">
