@@ -38,6 +38,12 @@ class MemosController < ApplicationController
     end
   end
 
+  def destroy
+    @memo = Memo.find(params[:id]) 
+    @memo.destroy
+    redirect_to root_path
+  end
+
   private
   def memo_params
     params.require(:memo).permit(:hospital_name, :hospital_teacher, :way_id, :pace_id, :remote_id, :record).merge(user_id: current_user.id)
