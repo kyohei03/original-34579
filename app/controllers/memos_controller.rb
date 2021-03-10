@@ -1,4 +1,5 @@
 class MemosController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :edit, :destroy]
 
   def index
     @memos = Memo.all
@@ -12,7 +13,7 @@ class MemosController < ApplicationController
     # binding.pry
     @memo = Memo.new(memo_params)
     if @memo.save
-      redirect_to root_path
+      redirect_to memos_path
     else
       render :new
     end
