@@ -5,30 +5,30 @@
       <h2 class="page-heading">社畜ユーザーの新規登録</h2>
       <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
         <div class="field">
-          <div class="word">
+          <div class="word1">
           <%= f.label :nickname, "ニックネーム" %><br />
           </div>
           <%= f.text_field :nickname, class:"input-default" %>
         </div>
 
         <div class="field">
-                  <div class="word">
+          <div class="word2">
           <%= f.label :email, "メールアドレス" %><br />
-                    </div>
+          </div>
           <%= f.email_field :email, class:"input-default", autofocus: true, autocomplete: "email" %>
         </div>
 
         <div class="field">
-                          <div class="word">
+          <div class="word3">
           <%= f.label :password, "パスワード（8文字以上）" %><br />
-                              </div>
+          </div>
           <%= f.password_field :password, class:"input-default",autocomplete: "new-password" %>
         </div>
 
         <div class="field">
-                                  <div class="word">
-          <%= f.label :password, "パスワード確認" %><br />
-                              </div>
+          <div class="word4">
+          <%= f.label :password, "パスワード（確認）" %><br />
+          </div>
           <%= f.password_field :password, class:"input-default", autocomplete: "new-password" %>
         </div>
 
@@ -47,7 +47,7 @@
         <div class="field">
         <div class="form-group">
             <div class='form-text-wrap'>
-            <label class="form-text">本名カナ(全角)</label>
+            <label class="form-text">本名カナ（全角）</label>
         </div>
         <div class='input-name-wrap'>
            <%= f.text_field :family_name_kana, class:"input-name",placeholder:"例) マツダ" %>
