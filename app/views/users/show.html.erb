@@ -28,8 +28,6 @@
         <%= "#{@user.nickname}さんのDr.メモ"%>
       </h2>
       <div class="user__card">
-        <%# 部分テンプレートでそのユーザーが投稿したプロトタイプ投稿一覧を表示する %>
-        <%# <% binding.pry %>
         <%= render partial: "memos/memo", collection: @user.memos %>
       </div>
     </div>

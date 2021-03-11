@@ -238,7 +238,7 @@ a {
   }
 
 .page-heading {
-  line-height: 70px;
+  line-height: 60px;
   border-bottom: 5px solid #fff;
   font-weight: bold;
   font-size: 25px;
@@ -375,7 +375,7 @@ a {
 /* ユーザーページ */
 .user__wrapper{
   min-height: calc(100vh - 161px);
-  padding-top: 100px;
+  padding-top: 117px;
   display: block;
 }
 
