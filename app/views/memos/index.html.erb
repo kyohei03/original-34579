@@ -5,11 +5,12 @@
         <%= link_to "#{current_user.nickname}さん", user_path(current_user), class: :greeting__link %>
         <p>　<br>
         <p>💊Dr.情報一覧💊<br>
+      <div class="card__wrapper">
+      <%= render partial: 'memo', collection: @memos %>
      <% end %>
       <%# </div> %>
     <%# // ログインしているときは上記を表示する %>
-    <div class="card__wrapper">
-      <%= render partial: 'memo', collection: @memos %>
+
       <%# 投稿機能実装後、部分テンプレートでプロトタイプ投稿一覧を表示する %>
     </div>
   </div>

@@ -3,5 +3,5 @@
     <p class="card__summary">
       <%= memo.hospital_teacher %>
     </p>
-     <%= link_to "by #{memo.user.nickname}", user_path(memo.user), class: :card__user %>
+     <%= link_to "#{memo.user.nickname}", user_path(memo.user), class: :card__user %>
 </div>

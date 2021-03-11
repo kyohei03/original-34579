@@ -127,14 +127,14 @@ a {
 /* メイン */
 
 .greeting{
-  padding-top: 100px;
+  padding-top: 120px;
   width: 100%;
 }
 .greeting__link{
   text-decoration: underline;
 }
 .page-heading {
-  font-size: 25px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 
@@ -150,7 +150,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 95px;
+  padding-top: 1px;
 }
 .card {
   width: calc((100% - 50px) / 3);
@@ -163,7 +163,7 @@ a {
   display: block;
   border-bottom: double 3px #3b4043;
   font-size: 15px;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 .card__title:hover {
@@ -174,7 +174,7 @@ a {
   color: #3b4043;
   font-size: 15px;
   border-bottom: double 3px #3b4043;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 .card__user {
   display: block;
