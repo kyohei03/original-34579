@@ -346,22 +346,6 @@ a {
   }
 
 /* 詳細ページ */
-.prototype__wrapper{
-  min-height: calc(100vh - 161px);
-}
-.prototype__hedding{
-  padding-top: 120px;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-}
-.prototype__user{
-  display: block;
-  font-size: 16px;
-  color: #999;
-  text-align: center;
-  text-decoration: underline;
-}
 
 .memo__manage{
   display: flex;
@@ -379,10 +363,6 @@ a {
   border-radius: 3px;
   transition: 0.4s ease;
   margin: 0 4px;
-}
-.prototype__btn:hover{
-  color: #fff;
-  background: #999;
 }
 
 .memo__comments{
@@ -406,7 +386,6 @@ a {
   text-decoration: underline;
 }
 
-/* ユーザーページ */
 .user__wrapper{
   min-height: calc(100vh - 161px);
   padding-top: 117px;
