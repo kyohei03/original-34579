@@ -1,5 +1,6 @@
 class MemosController < ApplicationController
   before_action :authenticate_user!, only: [:new, :edit, :destroy]
+  before_action :memo_find, only: [:show, :edit, :update, :destroy]
 
   def index
     @memos = Memo.all
@@ -49,5 +50,9 @@ class MemosController < ApplicationController
   private
   def memo_params
     params.require(:memo).permit(:hospital_name, :hospital_teacher, :way_id, :pace_id, :remote_id, :record).merge(user_id: current_user.id)
+  end
+
+  def memo_find
+    @memo = Memo.find(params[:id]) 
   end
 end
