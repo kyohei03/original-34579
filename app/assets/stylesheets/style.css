@@ -362,27 +362,13 @@ a {
   text-align: center;
   text-decoration: underline;
 }
-.prototype__image{
-  width: 40%;
-  margin: 0 auto;
-  padding: 16px 0;
-}
-.prototype__detail{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 8px;
-}
-.detail__title{
-  font-size: 20px;
-  font-weight: bold;
-}
-.prototype__manage{
+
+.memo__manage{
   display: flex;
   justify-content: center;
   padding-top: 16px;
 }
-.prototype__btn{
+.memo__btn{
   display: block;
   padding: 0.4em 1.6em;
   font-size: 1em;
@@ -399,7 +385,7 @@ a {
   background: #999;
 }
 
-.prototype__comments{
+.memo__comments{
   background-color: #f6f6f6;
   padding: 20px;
   margin: 28px 0 40px 0;
@@ -484,6 +470,7 @@ justify-content: space-around;
   justify-content: center;
   align-items: center;
 }
+
 /* フッター */
 
 .footer {
