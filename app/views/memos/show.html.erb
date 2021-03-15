@@ -42,8 +42,6 @@
           <%= link_to "削除する", "/memos/#{@memo.id}", method: :delete, class: :memo__btn %>
         </div>
       <% end %>
-      <%# // プロトタイプの投稿者とログインしているユーザーが同じであれば上記を表示する %>
-
       <div class="memo__comments">
         <% if user_signed_in? %>
           <%= form_with(model: [@memo, @comment], local: true) do |f| %>

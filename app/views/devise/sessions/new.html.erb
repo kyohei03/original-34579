@@ -4,21 +4,18 @@
      <div class="form__field1">
       <h2 class="page-heading">ユーザーログイン</h2>
         <%= form_with model: @user, url: user_session_path, local: true do |f| %>
-
         <div class="field">
           <div class="word8">
           <%= f.label :email, "メールアドレス" %><br />
           </div>
           <%= f.email_field :email, class:"input-default", autofocus: true, autocomplete: "email" %>
         </div>
-
         <div class="field">
           <div class="word9">
           <%= f.label :password, "パスワード（8文字以上）" %><br />
           </div>
           <%= f.password_field :password, class:"input-default", autocomplete: "current-password" %>
         </div>
-
         <div class="actions">
           <%= f.submit "ログイン", class: :form__btn  %>
         </div>
