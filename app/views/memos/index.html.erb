@@ -7,6 +7,11 @@
         <p>💊Dr.情報一覧💊<br>
       <div class="card__wrapper">
       <%= render partial: 'memo', collection: @memos %>
+      <% else %>
+        <h1>◊ Dr. Memo ◊</h1>
+         <div class="drop-container">
+         <div class="drop"></div>
+       </div>
      <% end %>
     </div>
   </div>
