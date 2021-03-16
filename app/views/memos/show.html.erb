@@ -46,8 +46,10 @@
         <% if user_signed_in? %>
           <%= form_with(model: [@memo, @comment], local: true) do |f| %>
             <div class="field">
+            <div class="word16">
               <%= f.label :comment, "応援コメント！" %><br/>
-              <%= f.text_field :text %>
+              </div>
+              <%= f.text_field :text, class:"input-default" %>
             </div>
             <div class="actions">
               <%= f.submit "送信する", class: :form__btn %>

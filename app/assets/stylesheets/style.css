@@ -249,8 +249,13 @@ a {
   font-weight: bold;
 }
 
+.word16{
+  margin-right: 7cm;
+  font-size: 17px;
+}
+
 .actions{
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .form__btn{
@@ -383,7 +388,7 @@ a {
 }
 
 .comment_user{
-  font-size: 16px;
+  font-size: 17px;
   color: #999;
   text-decoration: underline;
 }
