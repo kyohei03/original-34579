@@ -56,7 +56,8 @@ a {
   justify-content: space-between;
 }
 .logo {
-  width: 140px;
+  width: 6cm;
+  height: 2cm;
 }
 .nav__btn{
   display: inline-block;
