@@ -1,62 +1,79 @@
 <div class="main">
   <div class="inner">
     <div class="form__wrapper">
-      <h2 class="page-heading">社畜ユーザーの新規登録</h2>
+     <div class="form__field1">   
+      <h2 class="page-heading">ユーザーの新規登録</h2>
       <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
         <div class="field">
+          <div class="word1">
           <%= f.label :nickname, "ニックネーム" %><br />
-          <%= f.text_field :nickname %>
+          </div>
+          <%= f.text_field :nickname, class:"input-default", placeholder:"名前（担当エリア）" %>
         </div>
-
         <div class="field">
+          <div class="word2">
           <%= f.label :email, "メールアドレス" %><br />
-          <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+          </div>
+          <%= f.email_field :email, class:"input-default", autofocus: true, autocomplete: "email", placeholder:"会社のPCで登録をお願いします" %>
         </div>
-
         <div class="field">
+          <div class="word3">
           <%= f.label :password, "パスワード（8文字以上）" %><br />
-          <%= f.password_field :password, autocomplete: "new-password" %>
+          </div>
+          <%= f.password_field :password, class:"input-default",autocomplete: "new-password", placeholder:"8文字以上の半角英数字" %>
         </div>
-
         <div class="field">
-          <%= f.label :password, "パスワード確認" %><br />
-          <%= f.password_field :password, autocomplete: "new-password" %>
+          <div class="word4">
+          <%= f.label :password, "パスワード（確認）" %><br />
+          </div>
+          <%= f.password_field :password, class:"input-default", autocomplete: "new-password", placeholder:"同じパスワードを入力をお願いします" %>
         </div>
-
+        <div class="field">
         <div class="form-group">
           <div class='form-text-wrap'>
+            <div class="word5">
             <label class="form-text">本名（フルネーム）</label>
+            </div>
           </div>
           <div class='input-name-wrap'>
-            <%= f.text_field :family_name, placeholder:"例) 松田" %>
-            <%= f.text_field :first_name, placeholder:"例) 幸大" %>
+            <%= f.text_field :family_name, class:"input-name", placeholder:"例) 松田" %>
+            <%= f.text_field :first_name, class:"input-name", placeholder:"例) 幸大" %>
           </div>
         </div>
-
+        </div>
+        <div class="field">
         <div class="form-group">
             <div class='form-text-wrap'>
-            <label class="form-text">本名カナ(全角)</label>
+            <div class="word6">
+            <label class="form-text">本名カナ（全角）</label>
+            </div>
         </div>
         <div class='input-name-wrap'>
-           <%= f.text_field :family_name_kana, placeholder:"例) マツダ" %>
-           <%= f.text_field :first_name_kana, placeholder:"例) コウタ" %>
+           <%= f.text_field :family_name_kana, class:"input-name",placeholder:"例) マツダ" %>
+           <%= f.text_field :first_name_kana, class:"input-name",placeholder:"例) コウタ" %>
           </div>
         </div>
+        </div>
 
         <div class="field">
+          <div class="word7">
           <%= f.label :department, "部署" %><br />
-          <%= f.text_field :department %>
+          </div>
+          <%= f.text_field :department,class:"input-default", placeholder:"例) ○○営業所" %>
         </div>
 
         <div class="field">
+          <div class="word7">
           <%= f.label :position, "役職" %><br />
-          <%= f.text_field :position %>
+          </div>
+          <%= f.text_field :position, class:"input-default", placeholder:"例) ○○職" %>
         </div>
-
         <div class="actions">
           <%= f.submit "新規登録", class: :form__btn  %>
         </div>
       <% end %>
     </div>
+  </div>
+  </div>
   </div>
 </div>

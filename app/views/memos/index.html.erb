@@ -7,11 +7,12 @@
         <p>💊Dr.情報一覧💊<br>
       <div class="card__wrapper">
       <%= render partial: 'memo', collection: @memos %>
+      <% else %>
+        <h1>◊ Dr. Memo ◊</h1>
+         <div class="drop-container">
+         <div class="drop"></div>
+       </div>
      <% end %>
-      <%# </div> %>
-    <%# // ログインしているときは上記を表示する %>
-
-      <%# 投稿機能実装後、部分テンプレートでプロトタイプ投稿一覧を表示する %>
     </div>
   </div>
 </main>

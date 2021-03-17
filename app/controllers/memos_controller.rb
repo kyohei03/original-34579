@@ -1,5 +1,6 @@
 class MemosController < ApplicationController
   before_action :authenticate_user!, only: [:new, :edit, :destroy]
+  before_action :memo_find, only: [:show, :edit, :update, :destroy]
 
   def index
     @memos = Memo.all
@@ -19,20 +20,17 @@ class MemosController < ApplicationController
   end
 
   def show
-    @memo = Memo.find(params[:id])
     @comment = Comment.new
     @comments = @memo.comments
   end
 
   def edit
-    @memo = Memo.find(params[:id])
     unless current_user == @memo.user
       redirect_to action: :index
     end
   end
 
   def update
-    @memo = Memo.find(params[:id]) 
     if @memo.update(memo_params)
       redirect_to memo_path
     else
@@ -41,7 +39,6 @@ class MemosController < ApplicationController
   end
 
   def destroy
-    @memo = Memo.find(params[:id]) 
     @memo.destroy
     redirect_to root_path
   end
@@ -49,5 +46,9 @@ class MemosController < ApplicationController
   private
   def memo_params
     params.require(:memo).permit(:hospital_name, :hospital_teacher, :way_id, :pace_id, :remote_id, :record).merge(user_id: current_user.id)
+  end
+
+  def memo_find
+    @memo = Memo.find(params[:id]) 
   end
 end
