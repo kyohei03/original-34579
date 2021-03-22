@@ -11,6 +11,9 @@ https://original-34579.herokuapp.com/
 ログイン情報（テスト用）  
 ・Eメール：kawamura@com  
 ・パスワード：sb851097  
+  
+# 制作背景(意図)
+
 
 # テーブル設計
 
