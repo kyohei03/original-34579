@@ -119,3 +119,4 @@ Eメール：kawamura@com
 
 - belongs_to :memo
 - belongs_to :user
+
