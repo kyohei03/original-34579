@@ -21,7 +21,6 @@ Eメール：kawamura@com
 # DEMO
 
 ### トップページ
-![sampleA](https://user-images.githubusercontent.com/78196465/111990032-e0818e00-8b55-11eb-944e-a0eed8105d7e.gif)
 ![画像名](sample1.png)
   
 ・シンプルにトップページを作成しようとスカイブルー色をメインに作成（左上のロゴも自身で作成）  
