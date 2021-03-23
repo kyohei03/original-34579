@@ -76,9 +76,9 @@ Eメール：kawamura@com
 
 
 # 使用技術（開発環境）
-　
 ## バックエンド
- 
+Ruby・Ruby on Rails
+
   # テーブル設計
 
 ## usersテーブル
