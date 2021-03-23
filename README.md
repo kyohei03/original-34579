@@ -78,6 +78,20 @@ Eメール：kawamura@com
 # 使用技術（開発環境）
 ## バックエンド
 Ruby・Ruby on Rails
+## フロントエンド
+HTML・CSS
+## インフラ
+AWS（EC2）
+## Webサーバ（本番環境）
+heroku・nginx
+## アプリケーションサーバ（本番環境）
+unicorn
+## ソース管理
+GitHub・GitHubDesktop
+## テスト
+RSpec
+## エディタ
+VSCode
 
   # テーブル設計
 
