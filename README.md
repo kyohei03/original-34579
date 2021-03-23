@@ -9,8 +9,8 @@ Dr.Memo
 https://original-34579.herokuapp.com/  
 
 Basic認証  
-ID:　34579  
-Pass:　sb851097   
+ユーザー名:34579  
+パスワード:sb851097   
   
 ログイン情報（テスト用）  
 Eメール：kawamura@com  
