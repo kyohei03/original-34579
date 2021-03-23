@@ -7,10 +7,15 @@ Dr.Memo
 
 # 本番環境
 https://original-34579.herokuapp.com/  
+
+Basic認証  
+ID:　34579  
+Pass:　sb851097   
   
 ログイン情報（テスト用）  
 Eメール：kawamura@com  
 パスワード：sb851097  
+  
   
 # 制作背景(意図)  
 得意先向けに訪問ノート等を過去に手書きで付けていたが管理が難しくi-Padが    
