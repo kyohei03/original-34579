@@ -105,7 +105,7 @@ VSCode
 ・病院名など検索出来るようキーワード検索を導入  
 
 # Dr.MemoのER図
-![画像名](sample6.png)  
+![画像名](sample8.png)  
 
 # DB設計
 
