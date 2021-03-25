@@ -36,7 +36,6 @@ Eメール：kawamura@com
 ### ユーザー新規登録画面
 ![sampleC](https://user-images.githubusercontent.com/78196465/111991357-913c5d00-8b57-11eb-96dd-64354f2a2119.gif)
 
-![sample](https://user-images.githubusercontent.com/78196465/112412027-2eb6ad00-8d61-11eb-9120-fa5d109b0600.gif)
 ・新規登録にてニックネーム、メールアドレス、パスワード、本名（フルネーム）、本名カナ（全角）、部署、所属を入力で登録可能  
 ・全ての項目が入力されていないと登録出来ないように設定  
 ・パスワードは８文字以上で英数字混合で登録が可能  
