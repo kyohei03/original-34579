@@ -570,3 +570,18 @@ div.drop-container:after {
     opacity: 0;
   }
 }
+
+/* p {
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  width: 150px;
+  height: 50px;
+  font-size:16px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.bounce-top {
+  -webkit-animation: bounce-top 1.5s both;
+          animation: bounce-top 1.5s both;
+} */
